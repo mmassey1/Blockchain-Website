@@ -1,0 +1,80 @@
+/* basic styling for all pages*/
+body{
+	position: relative;
+	background-color: lavenderblush;
+	color: #6b5b95;
+	font-size: 23pt;
+}
+/* format for images included in the main text of the page*/
+img{
+	height: 350px;
+	width: 600px;
+}
+.headerphoto{
+	display: block;
+	margin-right: auto;
+	 float: left;
+  padding: 10px 20px 10px;
+}
+
+header {
+  background-color: thistle;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: mediumorchid;
+}
+section{
+	background-color: lightsteelblue;
+}
+hr{
+	color: royalblue;
+	height: 1px;
+}
+
+footer {
+  background-color: thistle;
+  padding: 10px;
+  text-align: center;
+  color: mediumorchid;
+  position: absolute;
+  right: 0; left: 0; bottom: 0;
+}
+article {
+  padding: 10px;
+  width: 100%;
+  background-color: lightsteelblue;
+}
+
+a:link{
+	color: lavender;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:visited {
+  color: mintcream;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: darkorchid;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#page2photo{
+	display: block;
+	 float: right;
+  padding: 10px 20px 10px;
+  height: 300px;
+  width: 450px;
+}
+ul{
+	list-style-type: circle;
+}

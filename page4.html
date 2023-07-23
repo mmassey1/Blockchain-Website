@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>User Experience Survey</title>
+	<link rel="stylesheet" type="text/css" href="CIT231-Project.css">
+	<section><nav><table>
+		<tr>
+			<td colspan="2"><a href="index.html">Main Page</a></td>
+			<td>&nbsp;</td>
+		<td><a href="page2.html">Page 2</a></td>
+		<td>&nbsp;</td>
+		<td><a href="page3.html">Page 3</a></td>
+		<td>&nbsp;</td>
+		<td><a href="page4.html">Page 4</a></td>
+		<td>&nbsp;</td>
+			</tr></table></nav></section>
+			<style>
+#survey {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#survey td, #survey th {
+  border: 1px solid lightskyblue;
+  padding: 8px;
+}
+
+#survey tr:nth-child(even){background-color: thistle;}
+
+#survey tr:hover {background-color: aliceblue;}
+
+#survey th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: palevioletred;
+  color: lavender;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+var rateMe = prompt("Please rate your experience using this website from 1-5!")	
+function oneStar()
+{
+	document.write("<img src='https://static.vecteezy.com/system/resources/previews/003/067/848/original/cartoon-sad-smile-face-emoticon-icon-in-flat-style-free-vector.jpg'>")
+	document.write("<br>Sorry you had a bad experience, would you like to share why?")
+}
+function twoStar()
+{
+	document.write("<img src='https://static.thenounproject.com/png/1058297-200.png'>")
+	document.write("<br>Two Stars, not good but not the worst!")
+}
+function threeStars()
+{
+	document.write("<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZD0du_TG3bzVXVs4wbA4Dzv4yKWhxVAEh7I3Xr9TgsyGOYzaq8NP1StohqDz5WUxck4&usqp=CAU'>")
+	document.write("<br>Hm, 3 stars, I guess you felt neutral about this website!")
+}
+function fourStars()
+{
+document.write("<img src='https://as1.ftcdn.net/jpg/01/12/43/90/220_F_112439016_DkgjEftsYWLvlYtyl7gVJo1H9ik7wu1z.jpg'>")
+document.write("<br>Oh wow, you had a good experience! <br> Is there any way I can improve to five stars?")
+}
+function fiveStars()
+{
+	document.write("<img src='https://image.spreadshirtmedia.com/image-server/v1/mp/products/T1459A839PA3861PT28D1020445586W10000H9610/views/1,width=550,height=550,appearanceId=839,backgroundColor=F2F2F2/smiley-face-sticker.jpg'>")
+	document.write("<br>Five stars!! <br> You had a great experience with this website!")
+}
+//different outputs for ratings 1-5//
+if (rateMe == "1")
+	{
+		oneStar()
+	}
+	else if (rateMe == "2")
+	{
+		twoStar()
+	}
+	else if (rateMe == "3")
+	{
+		threeStars()
+	}
+	else if(rateMe = "4")
+	{
+		fourStars()
+	}
+	else if(rateMe == "5")
+	{
+		fiveStars()
+	}
+
+	else{
+		document.write("<br> This value is invalid")
+	}
+	
+</script>
+<h3>After reading through my website, I would appreciate it if you could fill out a small survey. It helps me improve!</h3>
+<form action="mailto:mm18286p@pace.edu?subject=myorder" method="post">
+	<table id="survey">
+	<th><center>User Experience Survey.</center></th>
+	
+
+	<tr>
+<td>Name</td>
+<td colspan="4"><input type="text" name="PerName">
+</td>
+		</tr>
+
+				<tr>
+<td>Address</td>
+<td colspan="4">
+<input type="text" name="PerAddress"></td>
+		</tr>
+
+				<tr>
+<td>Email</td>
+<td colspan="4">
+<input type="text" name="PerEmail"></td>
+		</tr>
+
+				<tr>
+<td>Phone Number</td>
+<td colspan="4">
+<input type="text" name="PerPhone">
+</td>
+		</tr>
+
+<tr>
+<td colspan="5"> How much have you learned with this website?</td>
+		</tr>
+<tr>
+<td><input type="radio" name="nothing" value="nothing"> Nothing.</td>
+<td><input type="radio" name="notmuch" value="notmuch"> Not Much.</td>
+<td><input type="radio" name="something" value="something"> Something.</td>
+<td><input type="radio" name="goodamount" value="goodamount"> A good amount.</td>
+<td><input type="radio" name="alot" value="alot"> A lot of information.</td>
+
+		</tr>
+<tr>
+<td colspan="5">How many times did I say blockchain throughout this website? Check all that apply.</td>
+
+		</tr>
+			<tr>
+<td><input type="checkbox" name="toomuch" value="toomuch"> Too much!</td>
+<td><input type="checkbox" name="abitmuch" value="abitmuch"> A bit too much...</td>
+<td><input type="checkbox" name="enough" value="enough">  Enough.</td>
+<td><input type="checkbox" name="notenough" value="notenough"> Not enough!!!</td>
+<td>&nbsp;</td>
+		</tr>
+<tr>
+	<td colspan="5">
+	 How likely are you to mention blockchain after visiting this site ?<select size="4">
+		<option>Very Likely</option>
+		<option>Somewhat Likely</option>
+		<option>Not Likely</option>
+		<option>Never</option>
+	</select>
+</td>
+</tr>
+<tr>
+<td>Additional Comments</td>
+<td><textarea></textarea></td>
+<td><input type="submit" name="submit" value="Submit Survey"></td>
+<td><input type="reset" name="reset" value="Clear Survey"></td>
+</tr>
+
+	</table>
+	
+</form>
+</body>
+</html>
